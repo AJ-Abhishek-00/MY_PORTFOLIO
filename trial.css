@@ -1,0 +1,288 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #304feb;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e3edf2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #304feb;
+}
+
+nav .btn {
+    background: #304feb;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav .btn:hover {
+    background: #304feb;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #304feb;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+.header-content .btn {
+    margin-top: 20px;
+    background: #304feb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.header-content .btn:hover {
+    background: #304feb;
+}
+
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 100px 20px;
+}
+
+
+  /* Avatar Styles */
+.avatar {
+    border-radius: 50%; /* Keeps the image circular */
+    width: 250px; /* Passport size */
+    height: 250px; /* Passport size */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 100px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Distributes space between text and image */
+    align-items: center; /* Aligns items vertically */
+}
+
+.header-left {
+    flex: 1; /* Takes up remaining space */
+}
+
+.header-right {
+    flex: 0 0 auto; /* Keeps the size based on the content */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center; /* Center-aligns content on smaller screens */
+    }
+
+    .header-right {
+        margin-top: 20px; /* Adds space above the image on smaller screens */
+    }
+
+    .header-content h1, .header-content p, .header-content a {
+        text-align: center; /* Centers text content on smaller screens */
+    }
+}
+
+
+
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #304feb;
+}
+
+section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #bfbfbf;
+}
+
+.skills-container, .projects-container, .experience-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.skill, .project, .experience {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover, .project:hover, .experience:hover {
+    transform: scale(1.05);
+}
+
+.skill i, .project h3, .experience h3 {
+    font-size: 2em;
+    color: #304feb;
+    margin-bottom: 10px;
+}
+/* Certifications Section Styles */
+#certifications {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#certifications h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #304feb;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.certification {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.certification:hover {
+    transform: scale(1.05);
+}
+
+.certification h3 {
+    font-size: 1.1em;
+    color: #edeff8;
+    margin-bottom: 10px;
+}
+
+
+/* Contact Section Styles */
+.contact-info p {
+    font-size: 1.1em;
+    color: #bfbfbf;
+}
+
+.contact-info a {
+    color: #304feb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5px;
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-container, .projects-container, .experience-container {
+        flex-direction: column;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
